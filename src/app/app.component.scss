@@ -1,0 +1,75 @@
+html {
+    font-family: Roboto, sans-serif, Helvetica;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+  
+  mat-card {
+    max-width: 97%;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  .mat-toolbar {
+    justify-content: space-between;
+  }
+  
+  mat-icon {
+    vertical-align: middle;
+    font-size: 3rem;
+  }
+  .shadow-TOP{
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  }
+
+  .card_style{ 
+    box-shadow: 0 3px 5px -1px rgb(0, 0, 0), 0 6px 10px 0 rgba(0, 0, 0, 0.69), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+      background: aliceblue;
+      .cc_appraisal,.ep_appraisal,.vehicle_sales{
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+      }
+      .material-icons.color_green { color:white;    background-size: cover; }
+  }
+
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .header-colour{
+      background:#62A60A !important;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      text-align: center;
+      color: whitesmoke;
+  }
+  .mat-card-content{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+
+    th{
+        background-color: #62A60A;
+        color: whitesmoke;
+        font-weight: bold;
+        border: 1px solid #d5efda;
+    }
+ }
+
+ .card-sales,.mat-appraisal,.mat-ccapp{
+     background-color: #b9c5bd  !important;
+ }
+ .mat-card-content{
+mat-card {   
+    background: linear-gradient(0deg, rgb(219, 228, 228) 0%, rgb(246, 247, 246) 37%);
+ }
+}

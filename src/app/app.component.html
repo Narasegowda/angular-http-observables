@@ -23,3 +23,201 @@
     </div>
   </form>
 </div>
+<div>
+  <mat-toolbar class="pt-2 pb-2 shadow-TOP" color="$custom-theme-primary" style="height: 100% !important;">
+    <!-- <span>DevConquer</span> -->
+
+    <!-- <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>account_circle</mat-icon>
+      <mat-icon>more_vert</mat-icon>
+    </button> -->
+        <!-- <mat-icon style="width: 100px; height:100px" svgIcon="logo"></mat-icon> -->
+        <!-- <md-icon icon="../assets/images/EchoPark Logo@2x.png" ></md-icon> -->
+        <img class="logo" style="height:100px;margin-left: 38%"   src="../assets/images/EchoPark Logo@2x.png" alt="EchoPark logo">
+
+  </mat-toolbar>
+  <!-- <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu> -->
+  <div class="row mt-3 w-100">
+      <div class="col-10 ml-4 ">
+        <b>Region :<Label style="color: gray;">Northern Cal</Label></b> 
+      </div>
+  </div>
+
+
+  <div class="row card_style m-0 pl-3 pr-3">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 vehicle_sales">
+      <mat-card class="p-0 card-sales">
+        <mat-card-header class="p-1 header-colour">
+          
+          <mat-icon class="material-icons color_green mt-1">directions_car</mat-icon>
+          <!-- <mat-card-title >Shiba Inu</mat-card-title> -->
+          <h4 class="ml-5 mt-3 pl-5 mb-3" >Vehicle Sales</h4>
+        </mat-card-header> 
+        <mat-card-content class="mat-card-content">
+          <mat-card class="mt-2 mb-2">
+              <div class="row">
+                 <div class="col-6">YTD</div>
+                 <div class="col-6">24,563</div>                
+              </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-6">MTD</div>
+              <div class="col-6">2,901</div>
+           </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-6">Today</div>
+              <div class="col-6">0</div>
+           </div>
+          </mat-card>
+          <table mat-table [dataSource] = "dataSource" class = "mat-elevation-z8 table-striped"> 
+            <ng-container matColumnDef = "store">
+               <th mat-header-cell *matHeaderCellDef class="pl-5 pr-3"> Store</th>
+               <td mat-cell *matCellDef = "let element"> {{element.store}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "year">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Year</th>
+               <td mat-cell *matCellDef = "let element"> {{element.year}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "make">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Make</th>
+               <td mat-cell *matCellDef = "let element"> {{element.make}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "model">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Model</th>
+               <td mat-cell *matCellDef = "let element"> {{element.model}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "Appraisal">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 ">Appraisal</th>
+              <td mat-cell *matCellDef = "let element"> {{element.Appraisal}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef = "displayedColumns"></tr>
+            <tr mat-row *matRowDef = "let row; columns: displayedColumns;"></tr>
+         </table>
+        </mat-card-content>      
+      </mat-card>
+    </div> 
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 ep_appraisal">
+      <mat-card class="p-0 mat-appraisal">
+        <mat-card-header class="p-1 header-colour">
+          
+          <mat-icon class="material-icons color_green mt-1">looks_one</mat-icon>
+          <!-- <mat-card-title >Shiba Inu</mat-card-title> -->
+          <h4 class="ml-5 mt-3 pl-5 mb-3" >EP Appraisals</h4>
+        </mat-card-header> 
+        <mat-card-content class="mat-card-content">
+          <mat-card class="mt-2 mb-2">
+              <div class="row">
+                 <div class="col-4">YTD</div>
+                 <div class="col-4">17,709</div>
+                 <div class="col-4">98.29%</div>
+              </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-4">MTD</div>
+              <div class="col-4">1,358</div>
+              <div class="col-4">91.24%</div>
+           </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-4">Today</div>
+              <div class="col-4">0</div>
+              <div class="col-4">0.00%</div>
+           </div>
+          </mat-card>
+          <table mat-table [dataSource] = "dataSource" class = "mat-elevation-z8 table-striped"> 
+            <ng-container matColumnDef = "store">
+               <th mat-header-cell *matHeaderCellDef class="pr-3 pl-5">Store</th>
+               <td mat-cell *matCellDef = "let element"> {{element.store}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "year">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Year</th>
+               <td mat-cell *matCellDef = "let element"> {{element.year}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "make">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Make</th>
+               <td mat-cell *matCellDef = "let element"> {{element.make}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "model">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Model</th>
+               <td mat-cell *matCellDef = "let element"> {{element.model}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "Appraisal">
+               <th mat-header-cell *matHeaderCellDef class="pl-3">Appraisal</th>
+              <td mat-cell *matCellDef = "let element"> {{element.Appraisal}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef = "displayedColumns"></tr>
+            <tr mat-row *matRowDef = "let row; columns: displayedColumns;"></tr>
+         </table>
+        </mat-card-content>     
+      </mat-card>
+    </div> 
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 cc_appraisal">
+      <mat-card class="p-0 mat-ccapp">
+        <mat-card-header class="p-1 header-colour">
+          
+          <mat-icon class="material-icons color_green mt-1">looks_one</mat-icon>
+          <!-- <mat-card-title >Shiba Inu</mat-card-title> -->
+          <h4 class="ml-5 mt-3 pl-5 mb-3" >CC Appraisals</h4>
+        </mat-card-header> 
+        <mat-card-content class="mat-card-content">
+          <mat-card class="mt-2 mb-2">
+              <div class="row">
+                 <div class="col-4">YTD</div>
+                 <div class="col-4">15,732</div>
+                 <div class="col-4">4.42%</div>
+              </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-4">MTD</div>
+              <div class="col-4">529</div>
+              <div class="col-4">16.45%</div>
+           </div>
+          </mat-card>
+          <mat-card class="mt-2 mb-2">
+            <div class="row">
+              <div class="col-4">Today</div>
+              <div class="col-4">0</div>
+              <div class="col-4">0.00%</div>
+           </div>
+          </mat-card>
+          <table mat-table [dataSource] = "dataSource" class = "mat-elevation-z8 table-striped"> 
+            <ng-container matColumnDef = "store">
+               <th mat-header-cell *matHeaderCellDef  class="pr-3 pl-5">Store</th>
+               <td mat-cell *matCellDef = "let element"> {{element.store}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "year">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Year</th>
+               <td mat-cell *matCellDef = "let element"> {{element.year}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "make">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Make</th>
+               <td mat-cell *matCellDef = "let element"> {{element.make}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "model">
+               <th mat-header-cell *matHeaderCellDef class="pl-3 pr-2">Model</th>
+               <td mat-cell *matCellDef = "let element"> {{element.model}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "Appraisal">
+               <th mat-header-cell *matHeaderCellDef class="pl-3">Appraisal</th>
+              <td mat-cell *matCellDef = "let element"> {{element.Appraisal}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef = "displayedColumns"></tr>
+            <tr mat-row *matRowDef = "let row; columns: displayedColumns;"></tr>
+         </table>
+
+        </mat-card-content>    
+      </mat-card>
+    </div> 
+
+  </div>
+  
+</div>
