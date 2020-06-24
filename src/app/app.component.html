@@ -1,28 +1,3 @@
-<div class="container">
-  <form>
-    <div class="form-group search-bar">
-      <!-- Search -->
-      <input type="text" class="form-control" placeholder="Search..." #searchBox (input)="search(searchBox.value)">
-
-      <!-- Progres -->
-      <div class="loader" *ngIf="loading">
-        <div class="c-three-dots-loader"></div>
-      </div>
-    </div>
-
-    <!-- Search Result -->
-    <div class="list-group">
-      <div class="list-group-item list-group-item-action" *ngFor="let country of countries$ | async">
-        <div class="media">
-          <img src="{{country.flag}}" class="mr-3" alt="...">
-          <div class="media-body">
-            <p class="mt-0">{{ country.name }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
 <div>
   <mat-toolbar class="pt-2 pb-2 shadow-TOP" color="$custom-theme-primary" style="height: 100% !important;">
     <!-- <span>DevConquer</span> -->
